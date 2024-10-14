@@ -48,7 +48,7 @@ const Expenses = () => {
       .filter((data: ExpenseByCategorySummary) => {
         const matchesCategory =
           selectedCategory === "All" || data.category === selectedCategory;
-        const dataDate = parseDate(data.dates);
+        const dataDate = parseDate(data.date);
         const matchesDate =
           !startDate ||
           !endDate ||
